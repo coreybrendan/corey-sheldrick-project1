@@ -3,6 +3,35 @@ $secondary: #F5F5F5;
 $tertiary: #065635;
 $quaternary: #E0FDDF;
 $quinary: #F8FB05;
-$base-font: 'Lato', sans-serif;
-$h1-font: 'Kumar One Outline', cursive;
-$h2-font: 'Kumar One', cursive;
+// $base-font: 'Lato', sans-serif;
+// $h1-font: 'Kumar One Outline', cursive;
+// $h2-font: 'Kumar One', cursive;
+
+@mixin nav-font() {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #151514;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+@mixin h1-font() {
+  font-family: 'Kumar One Outline', cursive;
+  font-weight: 400;
+  font-size: 3.4rem;
+  color: #151514;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+@mixin logo-font() {
+  font-family: 'Kumar One', cursive;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}

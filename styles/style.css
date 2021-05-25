@@ -235,11 +235,6 @@ html {
   overflow: hidden;
 }
 
-.home header {
-  background-image: url(../assets/header-home.jpg);
-  background-size: cover;
-}
-
 html {
   font-size: 125%;
 }
@@ -263,4 +258,92 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home header {
+  background-image: url(../assets/header-home.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav li {
+  margin: 20px;
+  border-bottom: 2px solid rgba(100, 100, 100, 0);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #151514;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-weight: 400;
+  font-size: 3.4rem;
+  color: #151514;
+  line-height: 64px;
+  text-transform: uppercase;
+  width: 40%;
+  padding: 50px 0 0 130px;
+}
+
+.home header img {
+  width: 55%;
+  margin: 33px 0;
+}
+
+header li:hover {
+  border-bottom: 2px solid #F8FB05;
+}
+
+.blog header {
+  height: 50vh;
+  background-image: url(../assets/blog-image.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+header p {
+  font-family: "Kumar One", cursive;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.logo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-nav p {
+  width: 15%;
+  margin-top: 15px;
+}
+
+.blog h1 {
+  padding: 0;
 }
