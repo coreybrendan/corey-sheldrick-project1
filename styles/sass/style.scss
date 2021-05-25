@@ -1,0 +1,30 @@
+@import 'setup';
+@import 'variables';
+@import 'header';
+
+// general styles
+html{
+  font-size: 125%;
+}
+
+ul,
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+// /general styles
