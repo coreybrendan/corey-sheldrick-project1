@@ -1,9 +1,8 @@
-// index.html page styles
+// .home page styles
 .home header {
   background-image: url(../assets/header-home.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  // background-position: right;
 }
 
 nav ul {
@@ -17,7 +16,7 @@ nav li {
   @include nav-font;
 }
 
-h1 {
+.home h1 {
   @include h1-font;
   width: 40%;
   padding: 50px 0 0 130px;
@@ -31,11 +30,11 @@ h1 {
 header li:hover {
   border-bottom: 2px solid $quinary;
 }
-// /index.html page styles
+// .home page styles
 
-// blog.html page styles
+// .blog page styles
 .blog header {
-  height: 50vh;
+  height: 60vh;
   background-image: url(../assets/blog-image.jpg);
   background-size: cover;
   background-position: top;
@@ -55,6 +54,18 @@ header p {
   margin-top: 15px;
 }
 
-.blog h1 {
-  padding: 0;
+h1 {
+  @include h1-font;
+  padding: 110px 0;
+  // border: 1px solid yellow;
 }
+// /.blog page styles
+
+// .contact page styles
+.contact header {
+  height: 55vh;
+  background-image: url(../assets/contact-image.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
