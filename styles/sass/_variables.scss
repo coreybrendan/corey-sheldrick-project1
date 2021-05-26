@@ -3,9 +3,6 @@ $secondary: #F5F5F5;
 $tertiary: #065635;
 $quaternary: #E0FDDF;
 $quinary: #F8FB05;
-// $base-font: 'Lato', sans-serif;
-// $h1-font: 'Kumar One Outline', cursive;
-// $h2-font: 'Kumar One', cursive;
 
 @mixin nav-font() {
   font-family: 'Lato', sans-serif;
@@ -27,11 +24,42 @@ $quinary: #F8FB05;
   text-transform: uppercase;
 }
 
+@mixin h2-font() {
+  font-family: 'Kumar One', cursive;
+  font-weight: 400;
+  font-size: 1.65rem;
+  color: #151514;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
 @mixin logo-font() {
   font-family: 'Kumar One', cursive;
   font-weight: 400;
   font-size: 1.1rem;
+  color: #151514;
   line-height: 24px;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+@mixin body-font() {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #151514;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+@mixin button-font() {
+  font-family: 'Kumar One', cursive;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #F5F5F5;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
