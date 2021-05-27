@@ -541,6 +541,8 @@ li i {
 .top-left {
   grid-column: 1/span 2;
   grid-row-start: 1;
+  position: relative;
+  bottom: 50px;
 }
 
 .top-right {
@@ -569,6 +571,11 @@ li i {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  position: relative;
+  top: 50px;
 }
 
 .left-text-container a {
@@ -631,6 +638,18 @@ aside {
   background-color: #F8FB05;
   float: right;
   width: 20%;
+}
+
+.blog-post {
+  background-color: #fff;
+  float: left;
+  width: calc(100% - 20% - 175px);
+}
+
+.comment {
+  background-color: #E0FDDF;
+  float: left;
+  width: calc(100% - 20% - 175px);
 }
 
 .contact-page {

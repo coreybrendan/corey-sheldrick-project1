@@ -143,6 +143,9 @@ li i {
 .top-left {
   grid-column: 1 / span 2;
   grid-row-start: 1;
+  position: relative;
+  bottom: 50px;
+  // box-shadow: -15px 15px $quinary;
 }
 
 .top-right {
@@ -165,6 +168,9 @@ li i {
   grid-row-start: 2;
   display: grid;
   justify-content: end;
+  align-items: end;
+  position: relative;
+  top: 50px;
 }
 
 .left-text-container a {
@@ -208,6 +214,18 @@ aside {
   background-color: $quinary;
   float: right;
   width: 20%;
+}
+
+.blog-post {
+  background-color: #fff;
+  float: left;
+  width: calc(100% - 20% - 175px);
+}
+
+.comment {
+  background-color: $quaternary;
+  float: left;
+  width: calc(100% - 20% - 175px);
 }
 
 // .contact styles start here
