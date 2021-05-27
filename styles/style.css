@@ -627,6 +627,12 @@ li i {
   background-color: #E0FDDF;
 }
 
+aside {
+  background-color: #F8FB05;
+  float: right;
+  width: 20%;
+}
+
 .contact-page {
   background-color: #E0FDDF;
   height: calc(100vh - 50vh - 42px);
