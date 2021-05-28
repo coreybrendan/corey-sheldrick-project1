@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
 }
 
+.home header p {
+  visibility: hidden;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
