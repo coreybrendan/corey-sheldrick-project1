@@ -14,9 +14,6 @@
 }
 
 .home .text-container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   width: 70%;
 }
 
@@ -56,9 +53,9 @@ p {
   margin: 100px 0;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-  grid-template-columns: auto 575px 70px 575px auto;
+  grid-template-columns: auto 40% 70px 40% auto;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px auto 50px auto;
+  grid-template-rows: auto auto auto auto;
 }
 
 .item1 {
@@ -149,7 +146,6 @@ li i {
   grid-row-start: 1;
   position: relative;
   bottom: 50px;
-  // box-shadow: -15px 15px $quinary;
 }
 
 .top-right {
@@ -187,6 +183,14 @@ li i {
   @include button-font;
   padding: 10px 20px;
   background-color: #065635;
+}
+
+.top-left img {
+  box-shadow: 15px 15px $quinary;
+}
+
+.bottom-right img {
+  box-shadow: -15px 15px $quinary;
 }
 // /.program-location
 
