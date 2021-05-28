@@ -12,6 +12,7 @@
 <body class="blog">
   <header>
     <div class="wrapper">
+      <i class="fas fa-bars" aria-hidden="true"></i>
       <div class="logo-nav">
         <p>Sanctuary Helpers</p>
         <nav>
@@ -80,14 +81,14 @@
         </div> <!-- /.comment-two -->
         <form action="submit">
           <div class="name-email">
-            <label for="name"></label>
+            <label for="name" class="visually-hidden">Name</label>
             <input type="text" id="name" name="name" placeholder="Name">
 
-            <label for="email"></label>
+            <label for="email" class="visually-hidden">Email</label>
             <input type="text" id="email" name="email" placeholder="Email">
           </div>
 
-          <label for="comment"></label>
+          <label for="comment" class="visually-hidden">Your comment</label>
           <textarea name="comment" id="comment" cols="30" rows="05" placeholder="Comment"></textarea>
 
           <button type="submit">Post Comment</button>

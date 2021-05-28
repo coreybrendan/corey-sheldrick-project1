@@ -266,6 +266,28 @@ img {
   margin: 0 auto;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+header .fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
 .home header {
   background-image: url(../assets/header-home.jpg);
   background-size: contain;
@@ -975,6 +997,31 @@ footer p {
   .bottom-right {
     top: 0;
   }
+
+  .our-mission {
+    width: 30%;
+  }
+
+  .blog-left-column {
+    width: 60%;
+  }
+
+  .blog-text {
+    padding-left: 50px;
+  }
+
+  .comment {
+    padding-left: 50px;
+  }
+
+  .contact-form {
+    left: 50px;
+  }
+
+  .details {
+    margin: 50px 50px 0 0;
+    text-align: right;
+  }
 }
 @media (max-width: 768px) {
   .home h1 {
@@ -1002,19 +1049,83 @@ footer p {
   .text-block {
     padding: 50px;
   }
+
+  .our-mission {
+    width: 37%;
+  }
+
+  .mission-content-block {
+    position: relative;
+    top: 200px;
+  }
+
+  .comment-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .comment-one img {
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 0;
+  }
+
+  .comment-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .comment-two img {
+    margin-bottom: 10px;
+    width: 30%;
+    padding: 0;
+  }
+
+  .contact-page {
+    height: 75vh;
+  }
+
+  .contact-form {
+    float: none;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .details {
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin: 60 auto 0 auto;
+  }
 }
 @media (max-width: 480px) {
   .home h1 {
     display: none;
   }
 
-  .home header p {
+  header p {
     visibility: visible;
-    padding: 40px 80px;
+    padding: 15px 25px;
   }
 
-  .home nav ul {
+  nav ul {
     display: none;
+  }
+
+  header .fa-bars {
+    visibility: visible;
   }
 
   .home header img {
@@ -1120,6 +1231,49 @@ footer p {
             align-items: center;
     padding: 50px 0;
   }
+
+  .our-mission {
+    display: none;
+  }
+
+  .blog-left-column {
+    width: 100%;
+  }
+
+  .blog-post img {
+    top: -50px;
+  }
+
+  .blog-text {
+    padding-left: 30px;
+  }
+
+  .blog-text h2 {
+    text-align: center;
+  }
+
+  .comment {
+    padding-left: 30px;
+  }
+
+  .contact-name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact-name-email #name {
+    width: 100%;
+  }
+
+  .contact-name-email #email {
+    width: 100%;
+  }
+
+  .contact-page {
+    height: 80vh;
+  }
 }
 @media (max-width: 320px) {
   .home header {
@@ -1180,5 +1334,54 @@ footer p {
 
   footer p {
     font-size: 0.8rem;
+  }
+
+  .blog-post {
+    border-right: none;
+  }
+
+  .blog-text {
+    text-align: center;
+    padding-right: 30px;
+  }
+
+  .comment {
+    text-align: center;
+  }
+
+  .comment img {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .comment-one-text {
+    width: 100%;
+  }
+
+  .comment-two-text {
+    width: 100%;
+  }
+
+  .blog .name-email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog #name {
+    width: 100%;
+    padding: 15px 25px;
+  }
+
+  .blog #email {
+    width: 100%;
+    padding: 15px 25px;
+  }
+
+  .contact-form {
+    width: 90%;
+    -webkit-box-shadow: 7px 7px #F8FB05;
+            box-shadow: 7px 7px #F8FB05;
   }
 }

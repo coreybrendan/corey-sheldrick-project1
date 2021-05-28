@@ -1,4 +1,12 @@
 // .home page styles
+header .fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
 .home header {
   background-image: url(../assets/header-home.jpg);
   background-size: contain;
