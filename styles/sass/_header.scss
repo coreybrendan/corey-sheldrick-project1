@@ -13,6 +13,9 @@ nav ul {
 nav li {
   margin: 20px;
   border-bottom: 2px solid rgba(100,100,100,0);
+}
+
+nav a {
   @include nav-font;
 }
 
@@ -34,7 +37,7 @@ header li:hover {
 
 // .blog page styles
 .blog header {
-  height: 60vh;
+  height: 70vh;
   background-image: url(../assets/blog-image.jpg);
   background-size: cover;
   background-position: top;
