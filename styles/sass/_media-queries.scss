@@ -144,6 +144,16 @@
 
   header .fa-bars {
     visibility: visible;
+    cursor: pointer;
+  }
+
+  header .ham-menu {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+
+  .show-menu {
+    transform: translateY(0);
   }
 
   .home header img {

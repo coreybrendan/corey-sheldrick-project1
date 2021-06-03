@@ -284,8 +284,15 @@ header .fa-bars {
   position: absolute;
   top: 25px;
   right: 25px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   visibility: hidden;
+}
+
+header .fa-times {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2rem;
 }
 
 .home header {
@@ -461,13 +468,60 @@ p {
 
 .gallery {
   background-color: #E0FDDF;
+  position: relative;
+  width: 100%;
 }
 
-.gallery li {
-  width: calc((100% / 3) - 30px);
-  float: left;
-  margin: 15px;
-  padding: 60px 0;
+.image-container {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-track {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.fa-angle-left {
+  font-size: 4rem;
+  color: rgba(21, 21, 20, 0.75);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 100px;
+  z-index: 10;
+}
+
+.fa-angle-left:hover,
+.fa-angle-left:focus-within {
+  color: rgba(21, 21, 20, 0.95);
+  cursor: pointer;
+}
+
+.fa-angle-right {
+  font-size: 4rem;
+  color: rgba(21, 21, 20, 0.75);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 100px;
+  z-index: 10;
+}
+
+.fa-angle-right:hover,
+.fa-angle-right:focus-within {
+  color: rgba(21, 21, 20, 0.95);
+  cursor: pointer;
 }
 
 .text-grid {
@@ -1126,6 +1180,18 @@ footer p {
 
   header .fa-bars {
     visibility: visible;
+    cursor: pointer;
+  }
+
+  header .ham-menu {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+
+  .show-menu {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   .home header img {
